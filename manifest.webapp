@@ -1,0 +1,18 @@
+{
+  "name": "Demo Slide",
+  "description": "slide for demo multi-screen",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "developer": {
+    "name": "KuoE0",
+    "url": ""
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "90": "/images/display-90.png",
+    "135": "/images/display-135.png"
+  },
+  "permissions": {
+    "presentation":{}
+  }
+}

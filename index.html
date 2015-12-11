@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multi-screen with Presentation API on Firefox OS</title>
+
+    <!-- Reveal.js -->
+    <script type="text/javascript" src="./bower_components/reveal.js/js/reveal.js"></script>
+    <link type="text/css" rel="stylesheet" href="./bower_components/reveal.js/css/reveal.css" />
+    <link type="text/css" rel="stylesheet" href="./bower_components/reveal.js/css/theme/white.css" />
+
+    <!-- SweetAlert -->
+    <script type="text/javascript" src="./bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./bower_components/sweetalert/dist/sweetalert.css" />
+
+
+    <script type="text/javascript" src="./js/demo-slide.js"></script>
+    <link type="text/css" rel="stylesheet" href="./style/demo.css" />
+  </head>
+
+  <body>
+      <div>
+          <textarea id="log"></textarea>
+      </div>
+      <div class="reveal">
+          <div class="slides">
+              <section id="landing" class="present">
+                  <div class="title">
+                      <h1>Multi-screen<br/>
+                    with Presentation API<br/>
+                    on Firefox OS</h1>
+                  </div>
+                  <ul class="info">
+                      <li>Tommy Kuo [:KuoE0]</li>
+                      <li><a href="mailto:kuoe0@mozilla.com">kuoe0@mozilla.com</a></li>
+                      <li>Mozilla Taipei</li>
+                  </ul>
+              </section>
+              <section>
+                  <h1>Presentation API</h1>
+                  <p>2-UA presentation on <a href="https://www.youtube.com/watch?v=EJH_D44qmJs">all-hands demo</a>.</p>
+              </section>
+              <section id="comparison">
+                  <div id="2ua">
+                      <h3>2-UA Presentation</h3>
+                      <div>
+                        <img class="phone" src="./images/phone.png" />
+                        <div class="arrow-block">
+                            <p class="arrow">⇔</p>
+                            <p class="fragment comment">content rendered by display-side (target device)</p>
+                        </div>
+                        <img class="tv" src="./images/tv.png" />
+                      </div>
+                  </div>
+                  <div id="1ua">
+                      <h3>1-UA Presentation</h3>
+                      <div>
+                        <img class="phone" src="./images/phone.png" />
+                        <div class="arrow-block">
+                            <p class="arrow">⇔</p>
+                            <p class="fragment comment">content rendered by control-side (self)</p>
+                        </div>
+                        <img class="display" src="./images/display.png" />
+                      </div>
+                  </div>
+              </section>
+              <section>
+                  <h1>HDMI Support</h1>
+                  <img class="fullscreen" src="./images/hdmi.png" />
+              </section>
+              <section>
+                  <h1>Architecture</h1>
+              </section>
+              <section>
+                  <img class="fullscreen" src="./images/architecture.png" />
+              </section>
+              <section>
+                  <h1>Issues</h1>
+                  <div class="margin-bottom-div align-left">
+                    <ul>
+                        <li>Can not play video on second window / system-remote</li>
+                        <li>Crashed after unplug HDMI cable</li>
+                    </ul>
+                  </div>
+                  <h1>Future Works</h1>
+                  <div class="margin-bottom-div align-left">
+                    <ul>
+                        <li>Support <a href="https://en.wikipedia.org/wiki/Miracast">Miracast</a></li>
+                    </ul>
+                  </div>
+              </section>
+              <section>
+                  <h1>Thank you!</h1>
+                  <div class="acknowledgement">
+                      <p>And thanks to Luke Chang, Junior Hsu, Gary Chen, S.C. Chien, Shelly Lin, Henry Chang and Sean Lin.</p>
+                  </div>
+              </section>
+          </div>
+      </div>
+  </body>
+</html>
