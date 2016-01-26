@@ -51,12 +51,12 @@ function debug(msg) {
         if (msg.type == 'prev') {
           debug('prev slide');
           Reveal.prev();
-          this._connection(JSON.stringify({'type': 'ack', 'command': 'prev'}));
+          this._connection.send(JSON.stringify({'type': 'ack', 'command': 'prev'}));
         }
         else if (msg.type == 'next') {
           debug('next slide');
           Reveal.next();
-          this._connection(JSON.stringify({'type': 'ack', 'command': 'next'}));
+          this._connection.send(JSON.stringify({'type': 'ack', 'command': 'next'}));
         }
         break;
     }
@@ -76,7 +76,7 @@ function debug(msg) {
         showCancelButton: false,
         showConfirmButton: false
       });
-    }, 3000);
+    }, 1000);
 
     Reveal.initialize({
       // Display controls in the bottom right corner
