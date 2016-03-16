@@ -1,0 +1,22 @@
+{
+  "name": "demo-slide",
+  "homepage": "https://github.com/KuoE0/mozlando-lightning-talk-slide",
+  "authors": [
+    "KuoE0 <kuoe0.tw@gmail.com>"
+  ],
+  "description": "slide for multi-screen demo at Mozlando",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.2.0",
+    "sweetalert": "~1.1.3"
+  }
+}
